@@ -1,85 +1,89 @@
 <script setup lang="ts">
-import { RouterLink, RouterView } from 'vue-router'
-import HelloWorld from './components/HelloWorld.vue'
+import NavBar from './components/NavBar.vue'
+import { ref } from 'vue';
+import type { Ref } from 'vue';
+import type { exp } from '@/stores/util'
+import ExperienceCard from './components/ExperienceCard.vue'
+import { IconBrandLinkedin } from '@tabler/icons-vue';
+import { IconBrandGithub } from '@tabler/icons-vue';
+import { IconMail } from '@tabler/icons-vue';
+import { format } from 'date-fns';
+
+const experience : Ref<exp[]> = ref([
+  {
+    JobTitle: "Computer Help Desk Analyst",
+    StartDate: format(new Date('January 2, 2022'), "MMMM yyyy"),
+    EndDate:"",
+    Location:"Victoria, BC",
+    Company:"University of Victoria",
+    Competencies: ["I did so much at this company. Blah blah labuda da", "2222222"]
+  },
+  {
+    JobTitle: "Application Developer",
+    StartDate: format(new Date('January 2, 2023'), "MMMM yyyy"),
+    EndDate: format(new Date('August 25, 2023'), "MMMM yyyy"),
+    Location:"Victoria, BC",
+    Company:"BC Pension Corporation",
+    Competencies: ["I did so much at this company. Blah blah labuda da", "222222"]
+  }
+])
+
 </script>
 
 <template>
-  <header>
-    <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
+  <main class="bg-gradient-to-b from-black to-blue-500 min-h-screen">
+    <div class="max-w-7xl mx-auto">
+      <div class="justify-center items-center gap-y-6">
+        <NavBar/>
 
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
+        <div class="flex flex-col justify-center items-center text-5xl font-bold text-white mt-20 mb-44">
+          Toni David
 
-      <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
-      </nav>
+          <div class="flex mt-6">
+            <a href="https://tabler.io/admin-template" target="_blank">
+              <IconBrandLinkedin stroke={5} />
+            </a>
+
+            <a href="https://tabler.io/admin-template" target="_blank">
+              <IconBrandGithub stroke={2} />
+            </a>
+
+            <a href="https://tabler.io/admin-template" target="_blank">
+              <IconMail stroke={2} />
+            </a>
+          </div>
+
+
+        </div>
+
+        <div class="text-white">
+          <h3 class="text-2xl font-bold mb-4">About</h3>
+        </div>
+
+        <div class="text-white ">
+          <h3 class="text-2xl font-bold mb-4">Experience</h3>
+          <div class="grid grid-cols-1 gap-6">
+            <ExperienceCard
+              v-for="(exp, index) in experience"
+              :key="index"
+              :JobTitle="exp.JobTitle"
+              :Location="exp.Location"
+              :StartDate="exp.StartDate"
+              :EndDate="exp.EndDate"
+              :Company="exp.Company"
+              :Competencies="exp.Competencies"
+            />
+          </div>
+        </div>
+
+        <div class="text-white">
+          <h3 class="text-2xl font-bold mt-8 mb-4">Projects</h3>
+        </div>
+      </div>
+
     </div>
-  </header>
+  </main>
 
-  <RouterView />
 </template>
 
-<style scoped>
-header {
-  line-height: 1.5;
-  max-height: 100vh;
-}
 
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
-}
-
-nav {
-  width: 100%;
-  font-size: 12px;
-  text-align: center;
-  margin-top: 2rem;
-}
-
-nav a.router-link-exact-active {
-  color: var(--color-text);
-}
-
-nav a.router-link-exact-active:hover {
-  background-color: transparent;
-}
-
-nav a {
-  display: inline-block;
-  padding: 0 1rem;
-  border-left: 1px solid var(--color-border);
-}
-
-nav a:first-of-type {
-  border: 0;
-}
-
-@media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
-
-  .logo {
-    margin: 0 2rem 0 0;
-  }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
-
-  nav {
-    text-align: left;
-    margin-left: -1rem;
-    font-size: 1rem;
-
-    padding: 1rem 0;
-    margin-top: 1rem;
-  }
-}
-</style>
