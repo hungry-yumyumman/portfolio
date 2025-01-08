@@ -1,20 +1,24 @@
 <script setup lang="ts">
+import { useGoTo } from 'vuetify'
+
+const goTo = useGoTo()
+
 </script>
 
 <template>
-  <nav class="bg-red-800 rounded-[20px] p-2 flex justify-center items-center h-full">
-    <ul class="flex flex-col lg:flex-row gap-x-64 text-center">
+  <nav class="backdrop-blur-md bg-red-800 lg:bg-gray-400/20 rounded-[20px] p-2 flex justify-center items-center h-full">
+    <ul class="flex flex-row gap-x-12 sm:gap-x-28 md:gap-x-40 lg:gap-x-64 text-center">
       <li>
-        <a href="#" class="font-sans text-lg text-white"><strong></strong>Home</a>
+        <a href="#home" class="bg-transparent font-sans text-sm sm:text-lg text-white font-semibold">Home</a>
       </li>
       <li>
-        <a href="#" class="font-sans text-lg text-white">About</a>
+        <a href="#about" class="font-sans text-sm sm:text-lg text-white font-semibold">About</a>
       </li>
       <li>
-        <a href="#" class="font-sans text-lg text-white">Experience</a>
+        <a href="#experience" class="bg-transparent font-sans text-sm sm:text-lg text-white font-semibold">Experience</a>
       </li>
       <li>
-        <a href="#" class="font-sans text-lg text-white">Projects</a>
+        <a href="#projects" class="font-sans text-sm sm:text-lg text-white font-semibold">Projects</a>
       </li>
     </ul>
   </nav>

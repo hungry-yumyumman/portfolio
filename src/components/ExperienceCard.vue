@@ -6,13 +6,15 @@ defineProps({
   StartDate: String,
   EndDate: String,
   Company: String,
+  CompanyURL: String,
   Competencies: Array,
+  Technologies: Array
 });
 
 </script>
 
 <template>
-  <div class="experience-card bg-gray-800 p-4 rounded-md text-white">
+  <div class="bg-gray-800 p-4 rounded-md text-white">
     <h4 class="text-xl font-bold">{{ JobTitle }}</h4>
     <div class="font-medium">
       <p>{{ Company }}</p>
@@ -21,9 +23,6 @@ defineProps({
     <div v-for="(competency, index) in Competencies" :key="index">
       {{competency}}
     </div>
-
-
-
   </div>
 </template>
 
