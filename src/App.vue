@@ -60,16 +60,16 @@ const Projects: Ref<proj[]> = ref([
         <div ref="home" id="home" class="flex flex-col justify-center items-center text-5xl font-bold text-white mt-20 mb-44">
           Toni David
 
-          <div class="flex mt-6">
+          <div class="flex mt-6 gap-x-4">
             <a href="https://www.linkedin.com/in/toni-david/" target="_blank">
               <IconBrandLinkedin stroke={5} />
             </a>
 
-            <a href="https://tabler.io/admin-template" target="_blank">
+            <a href="https://github.com/hungry-yumyumman" target="_blank">
               <IconBrandGithub stroke={2} />
             </a>
 
-            <a href="https://tabler.io/admin-template" target="_blank">
+            <a href="mailto:timothy.toni.david11@gmail.com" target="_blank">
               <IconMail stroke={2} />
             </a>
           </div>

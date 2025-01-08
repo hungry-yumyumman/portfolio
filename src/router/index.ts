@@ -15,6 +15,11 @@ const router = createRouter({
       path: '/:pathMatch(.*)*',
       name: 'NotFound',
       component: () => import('../views/NotFound.vue')
+    },
+    {
+      path: '/elr',
+      name: 'elr',
+      component: () => import('../views/ELR.vue')
     }
   ]
 })
