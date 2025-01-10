@@ -13,5 +13,6 @@ export interface proj {
   ProjectName: string;
   ProjectDescription: string;
   Technologies: string[];
+  View: string;
 }
 

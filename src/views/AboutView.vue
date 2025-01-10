@@ -1,6 +1,6 @@
 <template>
-  <div class="about">
-    <h1>This is an about page</h1>
+  <div class="text-white">
+    <h1>This is an yum page</h1>
   </div>
 </template>
 

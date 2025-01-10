@@ -3,7 +3,8 @@
 defineProps({
   ProjectName: String,
   ProjectDescription: String,
-  Technologies: Array
+  Technologies: Array,
+  View: String
 })
 </script>
 

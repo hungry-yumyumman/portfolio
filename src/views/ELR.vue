@@ -3,7 +3,7 @@
 </script>
 
 <template>
-
+ <div  class="font-bold">ELR</div>
 
 </template>
 
