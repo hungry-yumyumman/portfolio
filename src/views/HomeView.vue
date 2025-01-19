@@ -18,7 +18,7 @@ const experience : Ref<exp[]> = ref([
     Location:"Victoria, BC",
     Company:"University of Victoria",
     CompanyURL: "https://www.uvic.ca",
-    Competencies: ["I did so much at this company. Blah blah labuda da", "2222222"],
+    Competencies: ["Provides technical support to students, faculty, and staff, resolving client issues and ensuring resource access using internal tools. Maintains detailed documentation with TeamDynamix and facilitates enterprise license assignments. Helps conduct system testing in pre-production environments to ensure smooth and reliable performance before deployment"],
     Technologies:[""]
   },
   {
@@ -28,7 +28,7 @@ const experience : Ref<exp[]> = ref([
     Location:"Victoria, BC",
     Company:"BC Pension Corporation",
     CompanyURL: "https://www.bcpensioncorp.ca",
-    Competencies: ["I did so much at this company. Blah blah labuda da", "222222"],
+    Competencies: ["Helped develop and improve internal applications using Microsoft Power Platform, Vue.js, and Azure Form Recognizer, enhancing efficiency and resource management. Automated application lifecycle tasks with PowerShell and SharePoint, and created a POC to replace legacy tools with Form.io."],
     Technologies:[""]
   }
 ])
@@ -42,11 +42,18 @@ const Projects: Ref<proj[]> = ref([
     ColorIndex:0
   },
   {
-    ProjectName: "Engineering Locker Registration",
-    ProjectDescription: "",
-    Technologies: [""],
-    View: "",
+    ProjectName: "Shift Aide Discord Bot",
+    ProjectDescription: "Coming Soon",
+    Technologies: [],
+    View: "/",
     ColorIndex:1
+  },
+  {
+    ProjectName: "Hosted Gramps Web",
+    ProjectDescription: "Coming Soon",
+    Technologies: [],
+    View: "/",
+    ColorIndex:2
   }
 ])
 
@@ -54,12 +61,12 @@ const Projects: Ref<proj[]> = ref([
 
 <template>
     <div class="max-w-7xl mx-auto">
-      <div class="justify-center items-center">
+      <div class="justify-center items-center pb-16">
         <div class="sticky top-0">
           <NavBar/>
         </div>
 
-        <div ref="home" id="home" class="flex flex-col justify-center items-center text-5xl font-bold text-white mt-20 mb-32">
+        <div ref="home" id="home" class="flex flex-col justify-center items-center text-5xl font-bold text-white mt-20 mb-20">
           Toni David
 
           <div class="flex mt-6 gap-x-4">
@@ -107,7 +114,7 @@ const Projects: Ref<proj[]> = ref([
           </div>
         </div>
 
-        <div id="projects" class="text-white mx-3 p-7 mt-12 pb-8 bg-midnightTeal rounded-[24px]">
+        <div id="projects" class="text-white mx-3 p-7 mt-12 bg-midnightTeal rounded-[24px]">
           <h3 class="text-2xl font-bold mt-3 mb-4">Projects</h3>
           <div
             class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6"

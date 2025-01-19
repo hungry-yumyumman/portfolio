@@ -13,7 +13,7 @@ import router from './router'
 
 const myCustomTheme: ThemeDefinition = {
   colors: {
-    'ecss-orange-pri': '#FE961B',
+    'orangePri': '#FE961B',
     'midnightTeal': '#001e22',
     'forestEmerald': '#0a533f',
     'brightTeal': '#0bbba1',
