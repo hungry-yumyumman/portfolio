@@ -3,7 +3,7 @@
 </script>
 
 <template>
-  <main class="bg-gradient-to-b from-black to-blue-500 min-h-screen">
+  <main class="bg-black min-h-screen">
     <RouterView/>
   </main>
 

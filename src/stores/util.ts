@@ -14,5 +14,6 @@ export interface proj {
   ProjectDescription: string;
   Technologies: string[];
   View: string;
+  ColorIndex: number;
 }
 
