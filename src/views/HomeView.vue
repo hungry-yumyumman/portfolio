@@ -91,7 +91,7 @@ const Projects: Ref<proj[]> = ref([
             I’m passionate about technology, especially when it comes to building reliable systems and improving how teams work together.
             That’s why I’m drawn to Site Reliability Engineering (SRE) and DevOps—there’s just something exciting about optimizing systems and making them run smoothly.
             Lately, I’ve been diving into cloud computing and sharpening my AWS skills, while also exploring web development whenever I need a creative break.
-            I enjoy working on projects that bridge the gap between development and operations, where I can solve real-world problems,
+            I enjoy working on projects that bridge the gap between development and operations or projects where I can solve real-world problems.
 
             If you’re into building cool, reliable systems or just want to connect, I’d love to hear from you!
           </div>
