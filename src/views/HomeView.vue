@@ -87,7 +87,7 @@ const Projects: Ref<proj[]> = ref([
         <div id="about" class="text-white mx-3 p-7">
           <h3 class="text-2xl font-bold mb-4">About</h3>
           <div class="pb-16 pt-4 text-lg">
-            Hi! I’m Oluwatoni but I mostly go by Toni. I'm a fourth-year Software Engineering student at the University of Victoria.
+            Hi! I’m Oluwatoni (he/him) but I mostly go by Toni. I'm a fourth-year Software Engineering student at the University of Victoria.
             I’m passionate about technology, especially when it comes to building reliable systems and improving how teams work together.
             That’s why I’m drawn to Site Reliability Engineering (SRE) and DevOps—there’s just something exciting about optimizing systems and making them run smoothly.
             Lately, I’ve been diving into cloud computing and sharpening my AWS skills, while also exploring web development whenever I need a creative break.
