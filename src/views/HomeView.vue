@@ -74,11 +74,11 @@ const Projects: Ref<proj[]> = ref([
               <IconBrandLinkedin stroke={5} />
             </a>
 
-            <a href="https://github.com/hungry-yumyumman" target="_blank">
+            <a href="https://github.com/hungry-yumyumman" class="hover:text-violet-400 active:text-violet-700" target="_blank">
               <IconBrandGithub stroke={2} />
             </a>
 
-            <a href="mailto:timothy.toni.david11@gmail.com" target="_blank">
+            <a href="mailto:timothy.toni.david11@gmail.com" class="hover:text-violet-400 active:text-violet-700" target="_blank">
               <IconMail stroke={2} />
             </a>
           </div>
