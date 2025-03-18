@@ -43,9 +43,9 @@ const Projects: Ref<proj[]> = ref([
   },
   {
     ProjectName: "Shift Aide Discord Bot",
-    ProjectDescription: "Coming Soon",
-    Technologies: [],
-    View: "/",
+    ProjectDescription: "Discord Bot to help coworkers exchange shifts",
+    Technologies: ["Python", "SQLite", "Oracle Cloud"],
+    View: "/shift-aide",
     ColorIndex:1
   },
   {
