@@ -19,9 +19,11 @@ export default {
         darkGrey:'#313338',
         lighterGrey:'#565a62',
         grampsBrown:'#795649'
+      },
+      fontFamily: {
+        'discord': ['"gg sans"', '"Noto Sans"', '"Helvetica Neue"', 'Helvetica', 'Arial', 'sans-serif'],
       }
     },
   },
   plugins: [],
 }
-
