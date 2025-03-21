@@ -8,6 +8,9 @@ import ShiftAideView from '@/views/ShiftAideView.vue'
 
 
 const router = createRouter({
+  scrollBehavior() {
+      return {top: 0}
+  },
   history: createWebHistory(),
   routes: [
     {path: '/', component: HomeView},
