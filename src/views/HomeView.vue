@@ -12,17 +12,27 @@ import { format } from 'date-fns';
 
 const experience : Ref<exp[]> = ref([
   {
-    JobTitle: "Computer Help Desk Analyst",
-    StartDate: format(new Date('January 2, 2022'), "MMMM yyyy"),
+    JobTitle: "Digital Services Co-op",
+    StartDate: format(new Date('May 26, 2025'), "MMMM yyyy"),
     EndDate:"",
-    Location:"Victoria, BC",
-    Company:"University of Victoria",
-    CompanyURL: "https://www.uvic.ca",
-    Competencies: ["Provides technical support to students, faculty, and staff, resolving client issues and ensuring resource access using internal tools. Maintains detailed documentation with TeamDynamix and facilitates enterprise license assignments. Helps conduct system testing in pre-production environments to ensure smooth and reliable performance before deployment"],
+    Location:"Saanichton, BC",
+    Company:"BC Ministry of Emergency Management and Climate Readiness",
+    CompanyURL: "https://www2.gov.bc.ca/gov/content/governments/organizational-structure/ministries-organizations/ministries/emergency-management-and-climate-readiness",
+    Competencies: ["Develops custom business applications using Microsoft Power Platform tools such as Power Apps, Power Automate, and Dataverse. Maintains and enhances Dynamics 365 solutions to meet evolving business needs. Supports business analysis by gathering requirements, documenting workflows, and assisting in solution design."],
     Technologies:[""]
   },
   {
-    JobTitle: "Application Developer",
+    JobTitle: "Computer Help Desk Analyst",
+    StartDate: format(new Date('January 2, 2022'), "MMMM yyyy"),
+    EndDate: format(new Date('April 29, 2025'), "MMMM yyyy"),
+    Location:"Victoria, BC",
+    Company:"University of Victoria",
+    CompanyURL: "https://www.uvic.ca",
+    Competencies: ["Provided technical support to students, faculty, and staff, resolving client issues and ensuring resource access using internal tools. Maintained detailed documentation with TeamDynamix and facilitates enterprise license assignments. Helped conduct system testing in pre-production environments to ensure smooth and reliable performance before deployment"],
+    Technologies:[""]
+  },
+  {
+    JobTitle: "Application Developer Co-op",
     StartDate: format(new Date('January 2, 2023'), "MMMM yyyy"),
     EndDate: format(new Date('August 25, 2023'), "MMMM yyyy"),
     Location:"Victoria, BC",
@@ -84,9 +94,9 @@ const Projects: Ref<proj[]> = ref([
           </div>
         </div>
 
-        <div id="about" class="text-white mx-3 p-7">
+        <div id="about" class="text-white mx-3 p-7 bg-plum rounded-[24px]">
           <h3 class="text-2xl font-bold mb-4">About</h3>
-          <div class="pb-16 pt-4 text-lg">
+          <div class="pb-8 pt-4 text-lg">
             Hi! I’m Oluwatoni (he/him) but I mostly go by Toni. I'm a fourth-year Software Engineering student at the University of Victoria.
             I’m passionate about technology, especially when it comes to building reliable systems and improving how teams work together.
             That’s why I’m drawn to Site Reliability Engineering (SRE) and DevOps—there’s just something exciting about optimizing systems and making them run smoothly.
@@ -97,7 +107,7 @@ const Projects: Ref<proj[]> = ref([
           </div>
         </div>
 
-        <div id="experience" class="text-white mx-3 p-7 bg-darkPurple rounded-[24px]">
+        <div id="experience" class="text-white mt-12 mx-3 p-7 bg-darkPurple rounded-[24px]">
           <h3 class="text-2xl font-bold mb-4">Experience</h3>
           <div class="grid grid-cols-1 gap-6 ">
             <ExperienceCard

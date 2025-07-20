@@ -18,7 +18,9 @@ export default {
         orangePri: '#FE961B',
         darkGrey:'#313338',
         lighterGrey:'#565a62',
-        grampsBrown:'#795649'
+        grampsBrown:'#795649',
+        plum: '#3a0035',
+        lightplum: '#590248'
       },
       fontFamily: {
         'discord': ['"gg sans"', '"Noto Sans"', '"Helvetica Neue"', 'Helvetica', 'Arial', 'sans-serif'],
