@@ -14,7 +14,7 @@ const experience : Ref<exp[]> = ref([
   {
     JobTitle: "Digital Services Co-op",
     StartDate: format(new Date('May 26, 2025'), "MMMM yyyy"),
-    EndDate:"",
+    EndDate: format(new Date('August 29, 2025'), "MMMM yyyy"),
     Location:"Saanichton, BC",
     Company:"BC Ministry of Emergency Management and Climate Readiness",
     CompanyURL: "https://www2.gov.bc.ca/gov/content/governments/organizational-structure/ministries-organizations/ministries/emergency-management-and-climate-readiness",
